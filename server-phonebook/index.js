@@ -4,6 +4,7 @@ const cors = require('cors');
 const app = express()
 app.use(cors());
 app.use(express.json())
+app.use(express.static('build'))
 
 // Portin kuuntelu
 const PORT = process.env.PORT || 3001
@@ -25,7 +26,7 @@ app.use(morgan('tiny'));
 
 // Testataan onnistuuko hakeminen
 app.get('/', (req, res) => {
-  res.send('<h1>Welcome the a mediocre Phonebook API</h1>');
+  res.send('<h1>Welcome to a mediocre Phonebook API</h1>');
 });
 
 app.get('/api/persons', (request, response) => {
