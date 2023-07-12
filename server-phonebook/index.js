@@ -23,6 +23,11 @@ app.use((req, res, next) => {
 //Tinyn käyttö
 app.use(morgan('tiny'));
 
+// Testataan onnistuuko hakeminen
+app.get('/', (req, res) => {
+  res.send('<h1>Welcome the a mediocre Phonebook API</h1>');
+});
+
 app.get('/api/persons', (request, response) => {
   response.json(persons)
 })
