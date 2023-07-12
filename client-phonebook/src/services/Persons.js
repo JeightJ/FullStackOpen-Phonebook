@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = 'https://example.com/api/persons';
+const baseUrl = 'https://phonebook-app-pp2u.onrender.com/';
 
 const getAll = () => {
   const request = axios.get(baseUrl)
