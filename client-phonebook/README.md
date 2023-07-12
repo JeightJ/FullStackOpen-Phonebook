@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Linkki sovellukseen:
+Frontti:
+https://phonebook-app-pp2u.onrender.com/
+
+Backi:
+https://phonebook-app-pp2u.onrender.com/api/persons
+
+Sovellus sisältää tehtävät  **3.1 - 3.11** (Sovelluksen pitäisi myös toimia lokaalisti)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
