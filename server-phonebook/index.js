@@ -5,15 +5,13 @@ const app = express()
 app.use(cors());
 app.use(express.json())
 
-const PORT = 3001;
 // Portin kuuntelu
+const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
 })
 
-// Luodaan middleware, joka tarkistaa requestin. Jos requesti on post,
-// tulostetaan pyynnön runko (console.log(req.body);)
-// Välitetään pyyntö sitten morganille
+// Jos requesti on post, tulostetaan pyynnön runko
 // En saanut tähän ratkaisua, joka tulostaisi tiedot yhdellä rivillä 
 app.use((req, res, next) => {
   if (req.method === 'POST') {
